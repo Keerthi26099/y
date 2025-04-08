@@ -1,22 +1,24 @@
-pipeline{
-agent any
+pipeline
+{
+ agent any
 stages{
 stage('clone')
 {
 steps{
-git "https://github.com/Keerthi26099/y.git"
+ git "https://github.com/Keerthi26099/y.git"
 }
 }
 stage('build')
 {
-steps{
-sh 'javac U.java'
+
+ steps{
+sh 'javac Hello.java'
 }
 }
 stage('run')
 {
-steps{
-sh 'java U'
+ steps{
+sh 'java Hello'
 }
 }
 }
