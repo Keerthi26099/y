@@ -12,13 +12,13 @@ stage('build')
 {
 
  steps{
-sh 'javac U.java'
+sh 'javac Un.java'
 }
 }
 stage('run')
 {
  steps{
-sh 'java U'
+sh 'java Un'
 }
 }
 }
