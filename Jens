@@ -1,0 +1,23 @@
+pipeline{
+agent any
+stages{
+stage('clone')
+{
+steps{
+git 
+}
+}
+stage('build')
+{
+steps{
+sh 'javac U.java'
+}
+}
+stage('run')
+{
+steps{
+sh 'java U'
+}
+}
+}
+}
