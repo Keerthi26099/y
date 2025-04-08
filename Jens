@@ -4,7 +4,7 @@ stages{
 stage('clone')
 {
 steps{
-git 
+git "https://github.com/Keerthi26099/y.git"
 }
 }
 stage('build')
